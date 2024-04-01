@@ -217,7 +217,7 @@ func aboutHandler(w http.ResponseWriter, r *http.Request) {
 
 func main() {
 	var addr string
-	flag.StringVar(&addr, "addr", "127.0.0.1:8080", "address to run on")
+	flag.StringVar(&addr, "addr", "0.0.0.0:8080", "address to run on")
 	flag.Parse()
 
 	initialize()
